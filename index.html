@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Transition</title>
+	<style>
+    .box {
+      margin:20px auto;
+      width: 100px;
+      height: 100px;
+      background-color: #07f;
+      border: 1px solid #222;
+      transition-property: width, height, background-color, border-radius; /*너비와 높이, 배경색의 변화를 줄거야*/
+      /*hover속성에 들어있는 속성을 모두 영향을 주고 싶다면 transition-property: all; 이라고 써도 됌*/
+      transition-duration: 2s; /*2초 동안 변화를 줄거야*/
+      transition-delay: 2s; /*2초 후에 변화를 시작하고 2초 후에 변화를 끝낼거야*/
+    }
+    .box:hover {
+      background-color: #512DA8;
+      width:200px;
+      height: 250px;		
+      border-radius: 50%;
+    }
+	</style>
+</head>
+
+<body>
+	<div class="box"></div>	
+</body>
+</html>
